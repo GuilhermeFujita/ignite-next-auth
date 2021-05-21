@@ -33,7 +33,7 @@ api.interceptors.response.use(response => {
           maxAge: 60 * 60 * 24 * 30 //30 days
         });
 
-        api.defaults.headers['Authorization'] = `Bearer ${token}`
+        api.defaults.headers['Authorization'] = `Bearer ${token}`;
       })
     }
     else {
